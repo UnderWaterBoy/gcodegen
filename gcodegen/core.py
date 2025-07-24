@@ -1,4 +1,3 @@
-"""core.py — генераторы G-кода и help_text."""
 from math import ceil, pi, cos, sin
 from typing import Tuple, List
 from .post import PostProcessor
@@ -70,10 +69,8 @@ def generate_face(
     emit(post.footer())
     return "\n".join(filter(None,g))+"\n"
 
-# core.py
-from math import pi
-from typing import Tuple, List
-from .post import PostProcessor
+
+
 
 def generate_round_pocket(
     diameter: float, depth: float, step_down: float,
