@@ -1,0 +1,3 @@
+python -m gcodegen.cli face --width 100 --length 50 --depth 2 --step-down 0.5 --feed 800 --spindle 12000 --tool-diam 10 --safe 5 --post gcodegen/data/posts/fanuc_ru.yaml --output examples/face_example.nc
+python -m gcodegen.cli round --diameter 150 --depth 10 --step-down 2 --feed 200 --spindle 4000 --tool-diam 2 --safe 5 --center-x 0 --center-y 0 --stepover-ratio 0.6 --cw --post gcodegen/data/posts/fanuc_ru.yaml > pocket.nc
+python -m gcodegen.cli square --width 50 --length 30 --depth 5 --step-down 1 --feed 600 --spindle 9000 --tool-diam 8 --safe 5 --start-x 0 --start-y 0 --post gcodegen/data/posts/fanuc_ru.yaml > sq.nc

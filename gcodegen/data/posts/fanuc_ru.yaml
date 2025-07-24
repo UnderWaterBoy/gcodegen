@@ -1,0 +1,19 @@
+decimal_separator: "."
+precision: 3
+line_numbers: true
+line_step: 10
+header_template:
+  - "%"
+  - "O{program_number}"
+  - "(PART: {comment})"
+  - "(DATE: {date})"
+footer_template:
+  - "M5"
+  - "M9"
+  - "G0 Z100.000"
+  - "M30"
+  - "%"
+coolant_on_cmd: "M8"
+coolant_off_cmd: "M9"
+spindle_on_cmd: "M3 S{spindle}"
+spindle_off_cmd: "M5"
